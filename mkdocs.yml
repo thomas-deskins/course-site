@@ -1,0 +1,93 @@
+site_name: Deskins Course Materials (DCM)
+site_author: T. K. Deskins
+site_description: Collection of materials for Dr. Deskins' courses.
+copyright: 'Copyright &copy; <span id="copyright-year"></span> T. K. Deskins. Materials
+  are available in accessible formats: see the <strong><a href="/accessibility/">accessibility
+  page</a></strong> for details.'
+extra_css:
+  - stylesheets/extra.css
+extra_js:
+  - js/year.js
+theme:
+  name: material
+  features:
+    - navigation.tabs  # Top-level sections rendered as horizontal tabs
+    - navigation.tabs.sticky # Keep tabs visible when scrolling
+    - navigation.sections # Group pages into sidebar sections
+    - navigation.expand # Expand all sidebar sections by default
+    - navigation.prune # Hide unused/collapsed branches
+    - navigation.indexes # Enable section index pages (index.md in folders)
+    - navigation.instant # Instant page loads (SPA-like)
+    - navigation.instant.prefetch # Prefetch pages on hover
+    - navigation.instant.progress # Show progress bar on navigation
+    - navigation.tracking # Update URL as you scroll
+    - navigation.top # Back-to-top button
+    - toc.integrate # Merge TOC into sidebar
+    - toc.follow # Highlight current section in TOC
+    - search.suggest # Autocomplete search suggestions
+    - search.highlight # Highlight matches on pages
+    - search.share # Share search queries via URL
+    - content.code.copy # Copy button for code blocks
+    - content.code.annotate # Inline code annotations
+    - content.tabs.link # Sync tabs across pages
+    - content.tooltips # Enable hover tooltips
+    - header.autohide # Hide header on scroll
+    - announce.dismiss # Dismissible announcement banner
+nav:
+  - Home: index.md
+  - PHY201:
+      - Overview: courses/phy201/index.md
+      - Exam 1 – Chapters 1, 2, 3: courses/phy201/e1.md
+      - Exam 2 – Chapters 4, 5, 6: courses/phy201/e2.md
+      - Exam 3 – Chapters 7, 8: courses/phy201/e3.md
+      - Exam 4 – Chapters 9, 10: courses/phy201/e4.md
+      - Exam 5 – Chapters 11, 12: courses/phy201/e5.md
+      - Exam 6 – Chapters 13, 14, 15: courses/phy201/e6.md
+      - Final Exam: courses/phy201/final.md
+  - PHY202:
+      - Overview: courses/phy202/index.md
+      - Exam 1 – Chapters 16, 17: courses/phy202/e1.md
+      - Exam 2 – Chapters 18, 19: courses/phy202/e2.md
+      - Exam 3 – Chapters 20, 21: courses/phy202/e3.md
+      - Exam 4 – Chapter 22: courses/phy202/e4.md
+      - Exam 5 – Chapters 23, 24: courses/phy202/e5.md
+      - Exam 6 – Chapters 25, 26: courses/phy202/e6.md
+      - Exam 7 – Chapters 27, 28: courses/phy202/e7.md
+      - Final Exam: courses/phy202/final.md
+  - PHY213:
+      - Overview: courses/phy213/index.md
+      - Exam 1 – Chapters 1, 2, 3: courses/phy213/e1.md
+      - Exam 2 – Chapters 4, 5, 6: courses/phy213/e2.md
+      - Exam 3 – Chapters 7, 8: courses/phy213/e3.md
+      - Exam 4 – Chapters 9, 10: courses/phy213/e4.md
+      - Exam 5 – Chapters 11, 12: courses/phy213/e5.md
+      - Exam 6 – Chapters 13, 14, 15: courses/phy213/e6.md
+      - Final Exam: courses/phy213/final.md
+  - PHY214:
+      - Overview: courses/phy214/index.md
+      - Exam 1 – Chapters 16, 17: courses/phy214/e1.md
+      - Exam 2 – Chapters 18, 19: courses/phy214/e2.md
+      - Exam 3 – Chapters 20, 21: courses/phy214/e3.md
+      - Exam 4 – Chapter 22: courses/phy214/e4.md
+      - Exam 5 – Chapters 23, 24: courses/phy214/e5.md
+      - Exam 6 – Chapters 25, 26: courses/phy214/e6.md
+      - Exam 7 – Chapters 27, 28: courses/phy214/e7.md
+      - Final Exam: courses/phy214/final.md
+  - CHM111:
+      - Overview: courses/chm111/index.md
+      - Exam 1 – Chapters 1, 2: courses/chm111/e1.md
+      - Exam 2 – Chapters 3, 4: courses/chm111/e2.md
+      - Exam 3 – Chapters 5, 6: courses/chm111/e3.md
+      - Exam 4 – Chapters 7, 8: courses/chm111/e4.md
+      - Exam 5 – Chapters 9, 10: courses/chm111/e5.md
+      - Final Exam: courses/chm111/final.md
+extra:
+  generator: false
+watch:
+  - includes
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
