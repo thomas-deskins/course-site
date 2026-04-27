@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --md-primary-fg-color:        #8c0000;
+  --md-primary-fg-color--light: #f2caca;
+  --md-primary-fg-color--dark:  #5c0000;
+  --md-accent-fg-color:         #5c0000;
+}
+/* Body text */
+body, .md-typeset {
+  font-family: "Crimson Text", serif;
+}
+
+/* Headings */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+
+/* Navigation + header */
+.md-header,
+.md-tabs,
+.md-nav,
+.md-sidebar {
+  font-family: "Noto Sans", sans-serif;
+}
+.md-typeset {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #222; /* slightly softer than pure black */
+}
+.md-typeset h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+}
+
+.md-typeset h2 {
+  font-size: 1.4rem;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+}
+
+.md-typeset h3 {
+  margin-top: 1.4em;
+}
+
+.md-typeset h1 {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 0.3em;
+}
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.015em;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.3em;
+}
+.md-grid {
+  max-width: 1080px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #5c0000;
+}
+
+.md-typeset ul li {
+  margin-bottom: 0.6em;
+}
+
+/* ICON LINKS (PDF, HTML, etc.) */
+.file-link {
+    margin-left: 0.1em; 
+    /* Adds space between icons so they don’t look cramped */
+
+    display: inline-flex; 
+    /* Lets us align SVG icons nicely (better than inline or inline-block) */
+
+    align-items: center; 
+    /* Vertically centers the SVG inside the clickable area */
+
+    opacity: 0.85; 
+    /* Slightly faded by default so they don’t compete with main link */
+
+    transition: opacity 0.2s ease, transform 0.1s ease;
+    /* Smooth hover animation (fade + slight zoom) */
+}
+
+.file-link:hover {
+    opacity: 1; 
+    /* Full visibility on hover (draws attention) */
+
+    transform: scale(1.1); 
+    /* Slight enlargement for tactile feedback */
+}
+
+
+/* SVG ICONS */
+.icon {
+    width: 16px;
+    height: 16px;
+    /* Fixed size so all icons are consistent */
+
+    fill: currentColor;
+    /* Makes icon inherit text color (works with themes automatically) */
+}
+
+
+/* MAIN TEXT LINK (the important one) */
+.file-main {
+    font-weight: 500;
+    /* Slight emphasis so it reads as the primary action */
+
+    text-decoration: none;
+    /* Removes underline for cleaner look (optional) */
+}
+
+.file-main:hover {
+    text-decoration: underline;
+    /* Restore underline on hover so users know it's clickable */
+}
+
+
+.answer-key {
+  margin-left: 1.2rem;
+  margin-top: -0.3rem;
+  font-size: 0.85em;
+  color: var(--md-primary-fg-color--dark);
+}
+
+.answer-key .file-main {
+  font-weight: 300;
+}
+
+.answer-key a {
+  color: var(--md-primary-fg-color);
+}
+
+/* the below seems to do nothing */
+.answer-key a:hover {
+  color: var(--md-accent-fg-color--light);
+}
